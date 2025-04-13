@@ -1,9 +1,9 @@
-import Header from '../Header/Header';
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
+import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Preloader from '../Preloader/Preloader';
-import CustomCursor from '../CustomCursor/CustomCursor';
+import './Layout.scss';
 
 const Layout = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,19 +14,19 @@ const Layout = () => {
     }, 1000);
   }, []);
 
-
   return (
     <>
       {isLoading ? <Preloader /> : (
-        <div>
-          <CustomCursor />
+        <div className="layout">
           <Header />
-          <Outlet />
+          <div className="outlet-container">
+            <Outlet />
+          </div>
           <Footer />
         </div>
-      )
-      }
+      )}
     </>
-  )
-}
+  );
+};
+
 export default Layout;

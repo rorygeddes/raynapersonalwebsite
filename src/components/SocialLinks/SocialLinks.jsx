@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types'
-import { Icon } from '@iconify/react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const SocialLinks = ({ data }) => {
   const [activeLink, setActiveLink] = useState(0);
@@ -10,17 +8,19 @@ const SocialLinks = ({ data }) => {
   };
 
   return (
-    <div className="st-social-link">
+    <div className="st-hero-social-links">
       {data.map((item, index) => (
-        <Link
-          to={item.link}
-          className={index === activeLink ? 'st-social-btn active' : 'st-social-btn'}
+        <a
+          href={item.link}
+          className={`st-social-btn ${index === activeLink ? 'active' : ''}`}
           onMouseEnter={() => handleIconHover(index)}
+          onMouseLeave={() => setActiveLink(null)}
           key={index}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <span className="st-social-icon"><Icon icon={`fa6-brands:${item.icon}`} /></span>
-          <span className="st-icon-name">{item.title}</span>
-        </Link>
+          {item.title}
+        </a>
       ))}
     </div>
   )
