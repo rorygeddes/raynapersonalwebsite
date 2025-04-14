@@ -22,8 +22,8 @@ const Header = () => {
             <div className="st-main-header-right">
               <div className="st-nav">
                 <ul className={`st-nav-list st-onepage-nav ${mobileToggle ? 'st-active' : ''}`}>
-                  <li><ScrollLink to="portfolio" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>portfolio</ScrollLink></li>
                   <li><ScrollLink to="about" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>about</ScrollLink></li>
+                  <li><ScrollLink to="portfolio" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>portfolio</ScrollLink></li>
                   <li><ScrollLink to="resume" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>resume</ScrollLink></li>
                   <li><ScrollLink to="skills" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>skills</ScrollLink></li>
                   <li><ScrollLink to="contact" spy={true} smooth={true} offset={-80} duration={500} onClick={() => setMobileToggle(false)}>contact</ScrollLink></li>

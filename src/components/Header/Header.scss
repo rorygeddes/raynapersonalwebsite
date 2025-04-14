@@ -1,9 +1,34 @@
 @import "../../sass/default/variable.scss";
 
-.st-site-header.st-style1 {
-  background-color: rgba($dark-color2, 0.9);
-  box-shadow: 0 10px 10px -10px rgba($dark-color2, 0.1);
-  transition: all 0.4s ease;
+.st-site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #F5F7F3;  // Light grey background
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &.st-sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #F5F7F3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .st-main-header {
+    position: relative;
+    padding: 20px 0;
+    
+    .st-main-header-in {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 
   .st-main-header-in {
     display: flex;
@@ -358,5 +383,21 @@
     height: 50px;
     width: 50px;
     border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.st-site-branding {
+  color: $base-color4;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'EB Garamond', serif;
+  
+  &:hover {
+    color: $base-color1;
+    text-decoration: none;
   }
 }

@@ -1,10 +1,43 @@
 @import "../../sass/default/variable";
 
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/TheSeasons.woff2') format('woff2'),
+       url('/fonts/TheSeasons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .st-hero-wrap {
   position: relative;
   height: 100vh;
+  padding-top: 100px;
   width: 100%;
   overflow: hidden;
+
+  .st-hero {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    &.st-style1 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .shoreline-title {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-family: 'The Seasons', serif;
+      font-size: 32px;
+      color: #fff;
+      z-index: 3;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .st-hero.st-style1 {
@@ -37,13 +70,15 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
     display: flex;
-    align-items: center;
-    padding-left: 10%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 0 0 10%;
   }
 
   .st-hero-text {
     color: #fff;
     max-width: 600px;
+    text-align: left;
 
     h1 {
       font-size: 72px;
@@ -51,6 +86,7 @@
       font-weight: 500;
       line-height: 1.2;
       color: #fff;
+      text-align: left;
     }
 
     h2 {
@@ -58,6 +94,7 @@
       margin-bottom: 41px;
       font-weight: 300;
       color: #fff;
+      text-align: left;
     }
 
     h3 {
@@ -66,6 +103,7 @@
       margin-bottom: 10px;
       font-weight: 300;
       color: #fff;
+      text-align: left;
     }
   }
 }
@@ -179,7 +217,7 @@
     }
     
     .st-hero-overlay {
-      padding-left: 0;
+      padding: 60px 0 0;
       justify-content: center;
     }
   }

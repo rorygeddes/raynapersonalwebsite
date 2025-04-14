@@ -78,6 +78,33 @@
   "portfolioData": {
     "portfolioItems": [
       {
+        "imgLink": "/shoreline.png",
+        "imgLinkLg": "/shoreline.png",
+        "title": "Shoreline Sanctuary",
+        "subTitle": "Environmental Building Design",
+        "description": "Located in Halifax, Nova Scotia, Shoreline Sanctuary serves as a net-zero urban oasis for two artists to gain inspiration from the coastal views to incorporate into their landscape works. Large windows look out into the Atlantic Ocean and forestry that surrounds the home, exposing the artists to the elements of nature, living systems and natural processes. Constructed primarily from reused timber planks and stucco, the house provides excellent insulation by retaining heat in the winter and keeping the interior cool in the summer. The building's assembly with screws and double-headed nails enables future deconstruction and repurposing of its timber frame, minimizing waste in local landfills and reducing energy consumption required for new material production. Designed in accordance with green building principles, the sanctuary relies exclusively on solar panels for energy, incorporates passive heating/cooling systems, and implements water harvesting strategies.",
+        "projectInfo": {
+          "course": "Environmental Building Design",
+          "instructor": "Anna Beznogova",
+          "location": "Halifax, NS",
+          "skills": "Rhinoceros, Lumion, Id, AI",
+          "collaborator": "Alexa Woodworth"
+        },
+        "images": [
+          {
+            "src": "/shoreline.png",
+            "caption": "Main View"
+          },
+          {
+            "src": "/shorelinesiteplan.png",
+            "caption": "Site Plan"
+          }
+        ],
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
         "imgLink": "/images/portfolio/portfolio1.jpg",
         "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
         "title": "Product Design",

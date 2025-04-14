@@ -10,9 +10,9 @@ const Home = () => {
   const { heroData, aboutData, skillData, portfolioData, resumeData, contactData, socialData } = data;
   return (
     <>
-      <PortfolioSection data={portfolioData} data-aos="fade-right" />
       <Hero data={heroData} socialData={socialData} data-aos="fade-right" />
       <About data={aboutData} data-aos="fade-right" />
+      <PortfolioSection data={portfolioData} data-aos="fade-right" />
       <Resume data={resumeData} />
       <Skill data={skillData} data-aos="fade-right" />
       <Contact data={contactData} socialData={socialData} data-aos="fade-right" />
