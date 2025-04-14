@@ -25,11 +25,11 @@ const Hero = ({ data, socialData }) => {
   return (
     <section id="home" className="st-hero-wrap">
       <div className="st-height-b80 st-height-lg-b80"></div>
-      <div
-        className="st-hero st-style1 st-bg"
-        style={{ backgroundImage: `url(${bgImgLink})` }}
-      >
-        <div className="container">
+      <div className="st-hero st-style1">
+        <div className="st-hero-img">
+          <img src="/shoreline.png" alt="Shoreline Architecture" />
+        </div>
+        <div className="st-hero-overlay">
           <div className="st-hero-text">
             <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               {subTitle}
